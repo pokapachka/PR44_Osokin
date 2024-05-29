@@ -163,14 +163,5 @@ namespace ПР44_Осокин.Models
                 });
             }
         }
-
-        [Schema.NotMapped]
-        public ObservableCollection<Priority> Priority
-        {
-            get
-            {
-                return new ObservableCollection<Priority>(new PriorityContext().Priority);
-            }
-        }
     }
 }
